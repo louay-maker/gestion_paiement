@@ -1,0 +1,194 @@
+/* Main Background */
+.root {
+    background-color: #F8F9FA;
+    -fx-background-color: #F8F9FA;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+/* Headers */
+.header-label {
+    color: #37474F;
+    -fx-text-fill: #37474F;
+    font-size: 26px;
+    -fx-font-size: 26px;
+    font-weight: 700;
+    -fx-font-weight: bold;
+}
+
+.subheader-label {
+    color: #546E7A;
+    -fx-text-fill: #546E7A;
+    font-size: 18px;
+    -fx-font-size: 18px;
+    font-weight: 600;
+}
+
+/* Forms */
+.form-container {
+    background-color: white;
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.05), 15, 0, 0, 5);
+    padding: 30px;
+    -fx-padding: 30;
+}
+
+.text-field,
+.date-picker,
+.combo-box {
+    font-size: 14px;
+    -fx-font-size: 14px;
+    -fx-background-radius: 8;
+    border-color: #ECEFF1;
+    -fx-border-color: #ECEFF1;
+    border-radius: 8px;
+    -fx-border-radius: 8;
+    padding: 8px;
+    -fx-padding: 8;
+}
+
+/* --- ELEGANT BUTTONS --- */
+.button {
+    font-size: 13px;
+    -fx-font-size: 13px;
+    font-weight: 600;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20;
+    /* Pill shape */
+    cursor: pointer;
+    -fx-cursor: hand;
+    padding: 8px 18px;
+    -fx-padding: 8 18;
+    color: white;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 2);
+}
+
+.button-primary {
+    background-color: #3F51B5;
+    -fx-background-color: #3F51B5;
+    /* Soft Indigo */
+}
+
+.button-primary:hover {
+    background-color: #303F9F;
+    -fx-background-color: #303F9F;
+}
+
+.button-secondary {
+    background-color: #78909C;
+    -fx-background-color: #78909C;
+    /* Soft Slate */
+}
+
+.button-secondary:hover {
+    background-color: #607D8B;
+    -fx-background-color: #607D8B;
+}
+
+.button-warning {
+    background-color: #FFB74D;
+    -fx-background-color: #FFB74D;
+    /* Soft Honey Orange */
+    color: #5D4037;
+    -fx-text-fill: #5D4037;
+}
+
+.button-warning:hover {
+    background-color: #FFA726;
+    -fx-background-color: #FFA726;
+}
+
+.button-danger {
+    background-color: #EF5350;
+    -fx-background-color: #EF5350;
+    /* Muted Rose Red */
+}
+
+.button-danger:hover {
+    background-color: #E53935;
+    -fx-background-color: #E53935;
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.06), 10, 0, 0, 4);
+    -fx-background-radius: 15;
+    padding: 20px;
+    -fx-padding: 20;
+}
+
+.card-amount {
+    font-size: 24px;
+    -fx-font-size: 24px;
+    font-weight: 800;
+    color: #3F51B5;
+    -fx-text-fill: #3F51B5;
+}
+
+.card-id {
+    font-size: 12px;
+    color: #B0BEC5;
+    -fx-text-fill: #B0BEC5;
+}
+
+.status-badge {
+    padding: 4px 14px;
+    -fx-padding: 4 14;
+    -fx-background-radius: 20;
+    color: white;
+    -fx-text-fill: white;
+    font-weight: bold;
+    font-size: 11px;
+    -fx-font-size: 11px;
+}
+
+/* --- DARK MODE OVERRIDES (Elegant) --- */
+.dark-theme {
+    background-color: #1A1A1B;
+    -fx-background-color: #1A1A1B;
+}
+
+.dark-theme .header-label,
+.dark-theme .subheader-label,
+.dark-theme .label {
+    color: #ECEFF1;
+    -fx-text-fill: #ECEFF1;
+}
+
+.dark-theme .form-container,
+.dark-theme .card {
+    background-color: #262627 !important;
+    -fx-background-color: #262627 !important;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 15, 0, 0, 0);
+}
+
+.dark-theme .text-field,
+.dark-theme .date-picker,
+.dark-theme .combo-box {
+    background-color: #333334;
+    -fx-background-color: #333334;
+    color: white;
+    -fx-text-fill: white;
+    border-color: #404041;
+    -fx-border-color: #404041;
+}
+
+.dark-theme .scroll-pane,
+.dark-theme .scroll-pane .viewport {
+    background-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.dark-theme .card-id {
+    color: #78909C;
+    -fx-text-fill: #78909C;
+}
+
+.dark-theme .separator .line {
+    border-color: #404041;
+    -fx-border-color: #404041;
+}

@@ -9,29 +9,35 @@ public class Paiement {
     private String statutPaiement;
     private String methodePaiement;
 
+    private String stripeSessionId;
+    private int userId;
+
     public Paiement() {
     }
 
-    public Paiement(int idPaiement, double montant, Date datePaiement, String statutPaiement, String methodePaiement) {
+    public Paiement(int idPaiement, double montant, Date datePaiement, String statutPaiement, String methodePaiement, String stripeSessionId) {
         this.idPaiement = idPaiement;
         this.montant = montant;
         this.datePaiement = datePaiement;
         this.statutPaiement = statutPaiement;
         this.methodePaiement = methodePaiement;
+        this.stripeSessionId = stripeSessionId;
     }
 
-    public Paiement(double montant, Date datePaiement, String statutPaiement, String methodePaiement) {
+    public Paiement(double montant, Date datePaiement, String statutPaiement, String methodePaiement, String stripeSessionId) {
         this.montant = montant;
         this.datePaiement = datePaiement;
         this.statutPaiement = statutPaiement;
         this.methodePaiement = methodePaiement;
+        this.stripeSessionId = stripeSessionId;
+    }
+
+    public Paiement(double montant, Date datePaiement, String statutPaiement, String methodePaiement) {
+        this(montant, datePaiement, statutPaiement, methodePaiement, null);
     }
 
     public Paiement(double montant, Date datePaiement, String statutPaiement) {
-        this.montant = montant;
-        this.datePaiement = datePaiement;
-        this.statutPaiement = statutPaiement;
-        this.methodePaiement = "Carte Bancaire";
+        this(montant, datePaiement, statutPaiement, "Carte Bancaire", null);
     }
 
     public int getIdPaiement() {
@@ -82,6 +88,22 @@ public class Paiement {
         return String.format("%.2f DT", montant);
     }
 
+    public String getStripeSessionId() {
+        return stripeSessionId;
+    }
+
+    public void setStripeSessionId(String stripeSessionId) {
+        this.stripeSessionId = stripeSessionId;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
     @Override
     public String toString() {
         return "Paiement{" +
@@ -90,6 +112,7 @@ public class Paiement {
                 ", datePaiement=" + datePaiement +
                 ", statutPaiement='" + statutPaiement + '\'' +
                 ", methodePaiement='" + methodePaiement + '\'' +
+                ", stripeSessionId='" + stripeSessionId + '\'' +
                 '}';
     }
 }

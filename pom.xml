@@ -34,6 +34,18 @@
             <version>7.2.5</version>
             <type>pom</type>
         </dependency>
+        <!-- Stripe SDK -->
+        <dependency>
+            <groupId>com.stripe</groupId>
+            <artifactId>stripe-java</artifactId>
+            <version>24.0.0</version>
+        </dependency>
+        <!-- SendGrid SDK -->
+        <dependency>
+            <groupId>com.sendgrid</groupId>
+            <artifactId>sendgrid-java</artifactId>
+            <version>4.10.2</version>
+        </dependency>
     </dependencies>
 
     <build>
